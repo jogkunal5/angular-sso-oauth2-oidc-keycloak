@@ -32,6 +32,7 @@ export class AppComponent {
   }
 
   logout() {
+    //let url = `http://localhost:8080/auth/realms/MySSOApp/protocol/openid-connect/logout?redirect_uri=${window.location.origin}`;
     this.oauthService.logOut();
   }
 
